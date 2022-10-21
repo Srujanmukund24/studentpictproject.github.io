@@ -1,0 +1,57 @@
+nav li a {
+    text-decoration: none;
+
+}
+nav li{
+    list-style: none;
+    
+}
+nav ul{
+    overflow: auto;
+}
+
+.center{
+    border: 3px ridge rgb(26, 31, 22);
+    border-radius: 20px;
+    height: 50px;
+    margin: 10px 280px;
+    width: 712px;
+    padding:20px;
+    float: left;
+    background-color: rgb(224, 231, 104);
+
+}
+.items{
+    padding: 0px 50px;
+}
+.navbar li {
+    float: left;
+}
+li a:hover ,
+li a#ho {
+    text-decoration: underline;
+    
+}
+.container{
+    padding:20px; 
+    margin:5px 5px;
+
+}
+.item3 img {
+    width: 930px;
+    height: 500px;
+}
+.right{
+    padding:20px 20px;
+    float:right;
+    display: inline;
+}
+ .logo{
+     width:130px;
+     height:112px;
+ }
+.left{
+    padding:2px 18px ;
+    display: inline;
+    float: left;
+ } 

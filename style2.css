@@ -1,0 +1,94 @@
+nav li a {
+    text-decoration: none;
+
+}
+nav li{
+    list-style: none;
+    
+}
+nav ul{
+    overflow: auto;
+}
+.logo{
+    width:130px;
+    height:112px;
+}
+
+.center{
+    border: 3px ridge rgb(26, 31, 22);
+    border-radius: 20px;
+    height: 60px;
+    margin: 10px 320px;
+    width: 712px;
+    float: left;
+    background-color: rgb(224, 231, 104);
+
+}
+.items{
+    padding: 0px 50px;
+}
+.navbar li {
+    float: left;
+}
+li a:hover ,
+li a#ho {
+    text-decoration: underline;
+}
+.right{
+    margin-bottom:100px;
+}
+.mainbox{
+    border:2px solid red ;
+    height: 350px;
+    display: flex;
+    padding: 20px 20px;
+    margin: 2px 25px;
+    justify-content: center;
+    border-radius: 30px;
+}
+.boxes1{
+    border:2px solid red ;
+    width:20%;
+    height: 300px;
+    border-radius: 14px;
+    margin:20px
+    
+}
+.boxes2{
+    border:2px solid red ;
+    width:20%;
+    border-radius: 14px;
+    height: 300px;
+    margin:20px
+    
+}
+.boxes3{
+    border:2px solid red ;
+    border-radius: 14px;
+    width:20%;
+    height: 300px;
+    margin:20px
+    
+}
+.boxes4{
+    border:2px solid red ;
+    width:20%;
+    border-radius: 14px;
+    height: 300px;
+    margin:20px
+    
+}
+.heading{
+    padding: 8px 558px;
+    font-size: 20px;
+}
+.mini{
+    padding:2px 115px;
+}
+
+.btnn{
+    margin:18px;
+    padding:8px;
+    width: 20%;
+    border-radius: 30px;
+}

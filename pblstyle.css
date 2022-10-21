@@ -1,0 +1,355 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+
+  
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.9;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 0px 34px;
+}
+
+#logo img {
+    height: 72px;
+    margin: 3px 6px;
+}
+
+
+
+ 
+
+#navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    
+}
+#navbar ul li{ 
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    
+    position: relative;
+}
+
+#navbar ul li a{
+    color: white;
+    padding: 3px 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+
+#navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+#navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(gifjuba.gif);
+    background-repeat:repeat;
+    z-index:-2
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+
+    width: 750px;
+    height: 450px;
+    position: absolute;
+    border-radius: 65px;
+    left :70% ;
+    top: 50%;
+   
+    opacity: 4.8;
+    margin:15px 0px;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(120deg, rgba(27 31 34 / 45%), rgba(27 31 34 / 45%)), url('IMG2.jpg');
+    background-size: 100% 100%;
+    animation: slider 8s infinite linear;
+
+}
+
+@keyframes slider {
+    0% {
+        background-image: linear-gradient(120deg, rgba(27 31 34 / 45%), rgba(27 31 34 / 45%)), url('IMG2.jpg');
+    }
+
+    35% {
+        background-image: linear-gradient(120deg, rgba(27 31 34 / 45%), rgba(27 31 34 / 45%)), url('pict2.jpeg');
+    }
+
+    75% {
+        background-image: linear-gradient(120deg, rgba(27 31 34 / 45%), rgba(27 31 34 / 45%)), url('pict3.jpeg');
+    }
+   
+
+  
+}
+
+#home h1 {
+    color: rgb(4, 4, 4);
+    font-weight: 1000;
+    text-align: center;
+    vertical-align: top;
+    font-family: 'Bree Serif', serif;
+    font-size: 3.0rem;
+    padding-top: 0px;
+    margin-right: 790px ;
+}
+
+
+
+
+#services {
+    margin: 80px 34px 34px 34px;
+    display: flex;
+    
+}
+
+#services .box {
+   
+    
+    border: 2px solid rgb(41, 182, 184);
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    top: 20px;
+    
+    background: rgb(241 241 241 / 79%);
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: auto;
+    transition: transform 0.5s;
+
+
+}
+#services .box :hover{
+    color: white;
+}
+span{
+    background:rgb(84 143 155);
+    height: 100%;
+    width: 0%;
+    border-radius: 28px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+    
+}
+.center{
+    font-size: 17px;
+    text-align:justify;
+    color: black;
+    font-weight: 100;
+    font-family: 'Bree Serif', serif;
+}
+
+#services .box:hover{
+    transform: translateY(-25px);
+}
+
+#services .box:hover span{
+    width: 100%;
+    
+}
+
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+
+   
+
+
+
+/* Clients Section */
+#client-section {
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(baggif3.gif);
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clientheading{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 1000;
+    color: white ;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 55px;
+    border-radius: 30px;
+}
+ 
+#clients img:hover{
+   
+    cursor: pointer;
+} 
+
+
+
+footer {
+    position: stickey;
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    padding-top: 20px;
+    margin-right: 780px ;
+    color: #041111;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+    font-weight: 500;
+}
+
+#h2 {
+    padding: 25px
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+/* fett page style:::::; */
+.btnn {
+    margin: 10px 18px;
+    padding: 12px;
+    width: 18%;
+    background-color: #abf4ff;
+    border-radius: 30px;
+}
+.btnn:hover{
+    background-color: #009688;
+    
+}
+
+#services .box1 {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 39px 350px;
+    border-radius: 78px;
+    background: #d3f4f3b5;
+    margin-bottom: 20px;
+    width:50%;
+}
+.ttheading {
+    margin-right:750px;
+}
+.btnn a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+
+
+}
+.copy
+{
+    color: white;
+    text-align: center ;
+}
+
+.center ul li 
+{
+    font-style: italic;
+    font-size: 20px;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>css card hover effects</title>
+    <link rel="stylesheet" href="swap.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css? family=Poppins:200,300,400,500,600,700,800,900& display=swap');
+
+/* club pages  */
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(45deg, #fc2b01df, #3b1848) ;
+}
+
+.container{
+    position: relative;
+    width: 3000px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    padding: relative;
+    width: 280px;
+    height: 450px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.408);
+    border-radius: 15px;
+    background: rgba(1255,255,255,0.1);
+    overflow: hidden;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(50px);
+}
+
+.circle{
+    padding: 20px;
+    text-align:left;
+    transform:translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.circle:hover{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.circle h3{
+    font-size: 2rem;
+    color: #fff;
+    z-index: 1;
+}
+.circle h2 {
+    position: absolute;
+    top: -60px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.041);
+}
+
+.circle p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+
+}
+.circle a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 20px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+    </style>
+</head>
+
+<body>
+    </div>
+    <div class="container">
+        <div class="card">
+            
+            <div class="circle">
+                <h2>01</h2>
+                <h3>PICT IEEE</h3>
+
+                <p>PICT IEEE Student Branch (PISB) was established in the year 1988 with an aim of inculcating a sense
+                    of technical awareness amongst its student members. PISB aims to escalate the knowledge and trends
+                    in the diverse fields of technologies amongst its members. PISB upholds two major events every year
+                    - Credenz and Credenz Tech Dayz with the first one being conducted in odd semester and the latter
+                    one in even semester.</p>
+                <a href="https://pictieee.in" target="_blank">Read more</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="circle">
+                <h2>02</h2>
+                <h3>PICT CSI</h3>
+
+                <p>PICT CSI Student Branch, working under CSI, was established in 2016 with an objective to facilitate
+                    research, knowledge and career enhancement for the students, along with inspiring and nurturing new
+                    entrants into the industry.
+
+                    It provides a platform for technical and non-technical education. 
+                   </p>
+                <a href="https://pictcsi.com" target="_blank">Read more</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="circle">
+                <h2>03</h2>
+                <h3>PICT ACM</h3>
+
+                <p>PICT ACM Student Chapter (PASC), a student chapter organization subsidiary of the Association of Computing Machinery(ACM), consists of highly motivated students, ready to learn and help each other bring the best out of them. PASC began in 2011, with the perspective of fostering technical and non technical qualities in an individual and helping them to shape their future.</p>
+                <a href="https://pict.acm.org" target="_blank">Read more</a>
+
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="circle">
+                <h2>04</h2>
+                <h3>PICT MUN </h3>
+
+                <p>The PICT MUN Club, established in 2016, consists of a group of inquisitive students who are passionate about social, political and economic issues that elude the future of our world. PICT MUN strongly believes in the important role of dialogue and discussion in solving any problem and hence always abides by its motto - 'Think.Discuss.Prosper.' PICT MUN organizes an annual MUN conference and various public speaking events to engage the youth.</p>
+                    <a href="https://mun.pict.edu" target="_blank">Read more</a>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
